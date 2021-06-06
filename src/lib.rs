@@ -347,7 +347,7 @@ impl Session {
                 .arg("-o")
                 .arg("BatchMode=yes")
                 .arg("-O")
-                .arg("exit")
+                .arg("logo")
                 .arg(&self.addr)
                 .output()
                 .await
@@ -395,7 +395,7 @@ impl Drop for Session {
                 .arg("-o")
                 .arg("BatchMode=yes")
                 .arg("-O")
-                .arg("exit")
+                .arg("logo")
                 .arg(&self.addr)
                 .stdout(std::process::Stdio::null())
                 .stderr(std::process::Stdio::null())
