@@ -1,6 +1,6 @@
 [package]
 name = "openssh"
-version = "0.8.0"
+version = "0.8.1"
 authors = ["Jon Gjengset <jon@thesquareplanet.com>"]
 edition = "2018"
 license = "MIT OR Apache-2.0"
@@ -23,4 +23,7 @@ shell-escape = "0.1"
 tokio = { version = "1", features = [ "process", "io-util" ] }
 
 [dev-dependencies]
+lazy_static = "1.4.0"
+regex = "1"
 tokio = { version = "1", features = [ "full" ] }
+
